@@ -33,8 +33,8 @@ $dados = mysqli_fetch_assoc($resultado);
 
     <h2>Editar usuário</h2>
     
-    
-    <input  type="hidden" value="<?php echo $dados['id_usuario'];?>" name="id"/>
+    <label for="id">Id do usuário:</label>
+    <input  type="text" id="id" value="<?php echo $dados['id_usuario'];?>" name="id"/><br><br>
 
     <label for="email">Informe seu email:</label>
     <input type="email" value="<?php echo $dados['email'];?>" name="email" id="email"/><br><br>

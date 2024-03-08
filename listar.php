@@ -12,6 +12,7 @@ $resultado = mysqli_query($mysqli,$sql);
 //Lista os itens
 echo '<table border=4;">
 <tr>
+<th>Id do usuário</th>
 <th>Email</th>
 <th>Senha</th>
 <th colspan=3>Opções</th>
@@ -19,6 +20,7 @@ echo '<table border=4;">
 
 while ($dados = mysqli_fetch_assoc($resultado)) {
 echo '<tr>';    
+echo '<td>'.$dados['id_usuario'] .'</td>';
 echo '<td>'.$dados['email'] .'</td>';
 echo '<td>'.$dados['senha'] .'</td>';
 
